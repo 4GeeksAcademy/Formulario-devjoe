@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div class="container border rounded-3  mt-3">
+    <form>
+        <div class="nav nav-bar bg-dark-subtle  mt-3 mb-3 ">
+            <h3>Payment for example</h3>
+        </div>
+        <div class="alert alert-danger">
+            some fields are missing
+        </div>
+        <div class="row">
+            <div class="col-4 ">
+              <fieldset>
+                <div>
+                <label for="credit-card"> <strong>Credit card #</strong></label>
+                </div>
+                <div>
+                    <input type="text" name="credit-card" placeholder="xxxx xxxx xxxx xxxx xxxx" class="form-control"/>
+                </div>
+              </fieldset>
+            </div>
+            
+            <div class="col-4">
+                <fieldset>
+                    <div>
+                        <label for="cvc"> <strong>CVC #</strong></label>
+                    </div>
+                    <div>
+                        <input type="text" name="cvc" minlength="3" placeholder="xxx" class="form-control"/>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-4 ">
+                <fieldset>
+                    <div>
+                        <label for="monto"> <strong>Amount</strong></label>
+                    </div>
+                    <div class=" d-flex">
+                        <i class="bi bi-currency-euro"></i><input type="text" name="monto" placeholder="Amount" class="form-control"/>
+                    </div>
+                </fieldset>
+            </div>
+<!-------------aqui empieza los bloque de informacion ------->
+            <div class="container mb-3">
+                <div class="row d-flex">
+<!--primer bloque de informacion nombre ciudad y tipo de tarjeta-->
+                    <div class="col-6 "> 
+                        <fieldset class="mb-4">
+                            <div>
+                                <label for="nombre"> <strong>First Name</strong></label>
+                            </div>
+                            <div>
+                                <input type="text" name="nombre" class="form-control"/>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mb-4">
+                            <div>
+                                <label for="ciudad"> <strong>City</strong></label>
+                            </div>
+                            <div >
+                                <input type="text" name="City" class="form-control"/>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                            <label for="text"><strong>We Accept</strong></label>
+                            </div>
+                            <div class="group-radio d-flex ">
+
+                                <div class="ml-3 d-flex" >
+                                    <input type="radio" name="select-card"/>
+                                        <span class="input-group-text bg-dark-subtle">
+                                            <i class="bi bi-credit-card "></i>
+                                        </span>
+                                </div>
+                                <div class="ms-3 d-flex">
+                                    <input type="radio" name="select-card"/>
+                                        <span class="input-group-text bg-dark-subtle ">
+                                            <i class="bi bi-credit-card "></i>
+                                        </span>
+                                </div>
+                                <div class="ms-3 d-flex">
+                                    <input type="radio" name="select-card"/>
+                                        <span class="input-group-text bg-dark-subtle">
+                                            <i class="bi bi-credit-card "></i>
+                                        </span>
+                                </div>
+                                <div class="ms-3 d-flex">
+                                    <input type="radio" name="select-card"/>
+                                        <span class="input-group-text bg-dark-subtle">
+                                            <i class="bi bi-credit-card "></i>
+                                        </span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+<!--segundo bloque de informacion ----apellido codigo postal estado-->
+                    <div class="col-6 ">
+                        <div>
+                            <label for="apellidos"><strong>Last Name</strong></label>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" name="apellidos" class="form-control" required/>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 ">
+                                <div>
+                                    <label for="estado"><strong>State</strong></label>
+                                </div>
+                                    <select name="estado" id="estado" class="form-control mb-3">
+                                        <option value="Albacete">Albacete</option>
+                                        <option value="Alicante/Alacant">Alicante/Alacant</option>
+                                        <option value="Almería">Almería</option>
+                                        <option value="Araba/Álava">Araba/Álava</option>
+                                        <option value="Asturias">Asturias</option>
+                                        <option value="Ávila">Ávila</option>
+                                        <option value="Badajoz">Badajoz</option>
+                                        <option value="Balears, Illes">Balears, Illes</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Bizkaia">Bizkaia</option>
+                                        <option value="Burgos">Burgos</option>
+                                        <option value="Cáceres">Cáceres</option>
+                                        <option value="Cádiz">Cádiz</option>
+                                        <option value="Cantabria">Cantabria</option>
+                                        <option value="Castellón/Castelló">Castellón/Castelló</option>
+                                        <option value="Ciudad Real">Ciudad Real</option>
+                                        <option value="Córdoba">Córdoba</option>
+                                        <option value="Coruña, A">Coruña, A</option>
+                                        <option value="Cuenca">Cuenca</option>
+                                        <option value="Gipuzkoa">Gipuzkoa</option>
+                                        <option value="Girona">Girona</option>
+                                        <option value="Granada">Granada</option>
+                                        <option value="Guadalajara">Guadalajara</option>
+                                        <option value="Huelva">Huelva</option>
+                                        <option value="Huesca">Huesca</option>
+                                        <option value="Jaén">Jaén</option>
+                                        <option value="León">León</option>
+                                        <option value="Lleida">Lleida</option>
+                                        <option value="Lugo">Lugo</option>
+                                        <option value="Madrid">Madrid</option>
+                                        <option value="Málaga">Málaga</option>
+                                        <option value="Murcia">Murcia</option>
+                                        <option value="Navarra">Navarra</option>
+                                        <option value="Ourense">Ourense</option>
+                                        <option value="Palencia">Palencia</option>
+                                        <option value="Palmas">Palmas</option>
+                                        <option value="Pontevedra">Pontevedra</option>
+                                        <option value="Rioja">Rioja</option>
+                                        <option value="Salamanca">Salamanca</option>
+                                        <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+                                        <option value="Segovia">Segovia</option>
+                                        <option value="Sevilla">Sevilla</option>
+                                        <option value="Soria">Soria</option>
+                                        <option value="Tarragona">Tarragona</option>
+                                        <option value="Teruel">Teruel</option>
+                                        <option value="Toledo">Toledo</option>
+                                        <option value="Valencia/València">Valencia/València</option>
+                                        <option value="Valladolid">Valladolid</option>
+                                        <option value="Zamora">Zamora</option>
+                                        <option value="Zaragoza">Zaragoza</option>
+                                        <option value="Ceuta">Ceuta</option>
+                                        <option value="Melilla">Melilla</option>
+                                    </select>
+                            </div>
+                            <div class="col-6 ">
+                                <div>
+                                    <label for="postal"><strong>Postal Code</strong></label>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" name="postal" class="form-control" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for=""><strong>Message</strong></label>
+                        </div>
+                            <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Comments</label>
+                          </div>
+                    </div>
+
+                </div>
+                <div class="container d-flex  justify-content-end">
+                    <div>
+                        <button type="button" class="btn bg-dark-subtle mx-3">Cancel</button>
+                    </div>
+                    <div>
+                    <button type="button" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
