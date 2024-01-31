@@ -23,7 +23,7 @@
                 <label for="credit-card"> <strong>Credit card #</strong></label>
                 </div>
                 <div>
-                    <input type="text" name="credit-card" placeholder="xxxx xxxx xxxx xxxx xxxx" class="form-control"/>
+                    <input type="text" name="credit-card" placeholder="xxxx xxxx xxxx xxxx xxxx" class="form-control" required/>
                 </div>
               </fieldset>
             </div>
@@ -34,7 +34,7 @@
                         <label for="cvc"> <strong>CVC #</strong></label>
                     </div>
                     <div>
-                        <input type="text" name="cvc" minlength="3" placeholder="xxx" class="form-control"/>
+                        <input type="text" name="cvc" minlength="3" placeholder="xxx" class="form-control" required/>
                     </div>
                 </fieldset>
             </div>
@@ -44,7 +44,7 @@
                         <label for="monto"> <strong>Amount</strong></label>
                     </div>
                     <div class=" d-flex">
-                        <i class="bi bi-currency-euro"></i><input type="text" name="monto" placeholder="Amount" class="form-control"/>
+                        <i class="bi bi-currency-euro"></i><input type="text" name="monto" placeholder="Amount" class="form-control"required/>
                     </div>
                 </fieldset>
             </div>
@@ -58,7 +58,7 @@
                                 <label for="nombre"> <strong>First Name</strong></label>
                             </div>
                             <div>
-                                <input type="text" name="nombre" class="form-control"/>
+                                <input type="text" name="nombre" class="form-control" required/>
                             </div>
                         </fieldset>
                         <fieldset class="mb-4">
@@ -66,7 +66,7 @@
                                 <label for="ciudad"> <strong>City</strong></label>
                             </div>
                             <div >
-                                <input type="text" name="City" class="form-control"/>
+                                <input type="text" name="City" class="form-control" required/>
                             </div>
                         </fieldset>
                         <fieldset>
@@ -115,7 +115,7 @@
                                 <div>
                                     <label for="estado"><strong>State</strong></label>
                                 </div>
-                                    <select name="estado" id="estado" class="form-control mb-3">
+                                    <select name="estado" id="estado" class="form-control mb-3"required>
                                         <option value="Albacete">Albacete</option>
                                         <option value="Alicante/Alacant">Alicante/Alacant</option>
                                         <option value="Almería">Almería</option>
@@ -194,7 +194,7 @@
                         <button type="button" class="btn bg-dark-subtle mx-3">Cancel</button>
                     </div>
                     <div>
-                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                     </div>
                 </div>
             </div>
